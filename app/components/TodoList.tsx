@@ -18,7 +18,7 @@ const TodoList: React.FC<TodoListProps> =({ tasks }) => {
         </tr>
       </thead>
       <tbody className="text-2xl text-orange-400">
-        {tasks.map((task) => <Task task={task}/>)}
+        {tasks.map((task) => <Task key={task.id}  task={task}/>)}
       </tbody>
     </table>
   </div>
